@@ -1,0 +1,3 @@
+#网络参数配置在cfg/params.yaml文件下
+uint8 NewNetworkConfiguration #0 = Ignore parameters（忽略对应参数）1 = Use parameters（配置对应参数）
+---

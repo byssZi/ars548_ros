@@ -1,0 +1,6 @@
+float32 Length #车辆长度
+float32 Width #车辆宽度（不含后视镜）
+float32 Height #车辆高度
+float32 Wheelbase #车辆轴距
+uint8 NewVehicleParameters #0 = Ignore parameters（忽略对应参数）1 = Use parameters（配置对应参数）
+---

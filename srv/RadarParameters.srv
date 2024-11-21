@@ -1,0 +1,8 @@
+uint16 MaximumDistance #最大检测距离 93 ~ 1514m。默认为 301m
+uint8 FrequencySlot #中心频隙（低、中、高）。默认为“中”频段 0 = Low (76.23 GHz)（低频段）1 = Mid (76.48 GHz)（中频段）2 = High (76.73 GHz)（高频段）
+uint8 CycleTime #测量周期（50 ~ 100ms）。默认为 50ms
+uint8 TimeSlot #测量周期偏移量（10 ~ 测量周期-1ms）。默认为 20ms
+uint8 HCC #国家码。默认为 worldwide，即最大功率 1 = Worldwide（世界通用版）2 = Japan（日本市场版）
+uint8 Powersave_Standstill #雷达传感器静止时进入低功耗模式。默认为关闭 0 = Off（关闭）1 = On（开启）
+uint8 NewRadarParameters #0 = Ignore parameters（忽略对应参数）1 = Use parameters（配置对应参数）
+---

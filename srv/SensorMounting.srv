@@ -1,0 +1,8 @@
+float32 Longitudinal #雷达传感器相对于车辆前轴的纵向位置（LongPos）
+float32 Lateral #雷达传感器相对于车辆前轴中心的横向位置（LatPos）
+float32 Vertical #雷达传感器相对于地面的垂直位置（VertPos）
+float32 Yaw #雷达传感器相对于车辆行驶方向/车辆中轴线的偏航角度（Yaw angle）
+float32 Pitch #雷达传感器俯仰角度（Pitch angle）
+uint8 PlugOrientation #雷达传感器连接器相对于驾驶员视角的朝向（Plug orientation）0 = PLUG_RIGHT（朝向驾驶员左侧）1 = PLUG_LEFT（朝向驾驶员右侧）
+uint8 NewSensorMounting #0 = Ignore parameters（忽略对应参数）1 = Use parameters（配置对应参数）
+---

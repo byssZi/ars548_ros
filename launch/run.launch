@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<launch>
+    <rosparam file="$(find ars548_ros)/cfg/params.yaml" command="load" />
+    <arg name="frameID_Radar" default="ARS_548"/>
+    <arg name="radarIP" default="224.0.2.2"/>
+    <arg name="radarPort" default="42102"/>
+    <node pkg="ars548_ros" type="ars548_ros_node" name="ars548_receive_node" output="screen">
+        <param name="radarIP" value="$(arg radarIP)"/>
+        <param name="radarPort" value="$(arg radarPort)"/>
+        <param name="frameID" value="$(arg frameID_Radar)"/>
+    </node>
+    <node pkg="ars548_ros" type="ars548_process_node" name="ars548_send_node" output="screen">
+    </node>
+    <node pkg="ars548_ros" type="radar_input_node" name="test_radar_input_node">
+    </node>
+</launch>
